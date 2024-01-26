@@ -9,9 +9,6 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/_ReSharper.Caches/
-/UserSettings/
-/ProjectSettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -27,8 +24,7 @@
 /[Aa]ssets/Plugins/Editor/JetBrains*
 
 # Visual Studio cache directory
-**/.vs/
-**/.vscode/
+.vs/
 
 # Gradle cache directory
 .gradle/
@@ -64,12 +60,6 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-.npmrc
-packages.json
-packages.json.meta
-TestResults.xml
-TestSettings.json
-UnityLog.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -81,6 +71,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Other
-.DS_Store
 .vsconfig

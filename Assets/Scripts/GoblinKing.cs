@@ -78,7 +78,6 @@ public class GoblinKing : MonoBehaviour
     {
         if (!alreadyJoked)
         {
-            Debug.Log("Läppä");
             alreadyJoked = true;
 
             StartCoroutine(TellJoke());

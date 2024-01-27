@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public GameObject goblinManager;
     public GameObject playerVirtualCamera;
 
+    public GameObject loseCanvas;
+    public GameObject winCanvas;
+
     // Start is called before the first frame update
     public static GameManager Instance;
 
@@ -55,6 +58,38 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void WinGame()
+    {
+        playerVirtualCamera.SetActive(false);
+        player.SetActive(false);
+        king.SetActive(false);
+        goblinManager.SetActive(false);
+        foreach (var goblin in goblins)
+        {
+            goblin.gameObject.SetActive(false);
+        }
+
+        winCanvas.SetActive(true);
+        winPlayableDirector.gameObject.SetActive(true);
+        winPlayableDirector.Play();
+    }
+
+    public void LoseGame()
+    {
+        playerVirtualCamera.SetActive(false);
+        player.SetActive(false);
+        king.SetActive(false);
+        goblinManager.SetActive(false);
+        foreach (var goblin in goblins)
+        {
+            goblin.gameObject.SetActive(false);
+        }
+
+        loseCanvas.SetActive(true);
+        deadPlayableDirector.gameObject.SetActive(true);
+        deadPlayableDirector.Play();
     }
 
     public void StartGame()

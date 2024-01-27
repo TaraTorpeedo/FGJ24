@@ -1,0 +1,23 @@
+{
+    "Jokes":
+    [
+      {
+        "FirstHalf_String": "John",
+        "SecondHalf_String": "John",
+        "FirstHalf_Audio": "John",      
+        "SecondHalf_Audio": "John"
+      },
+      {
+        "FirstHalf_String": "ASD",
+        "SecondHalf_String": "ASD",
+        "FirstHalf_Audio": "ASD",      
+        "SecondHalf_Audio": "ASD"
+      },
+      {
+        "FirstHalf_String": "FFF",
+        "SecondHalf_String": "FF",
+        "FirstHalf_Audio": "fasf",      
+        "SecondHalf_Audio": "asfasfsa"
+      }
+    ]
+  }

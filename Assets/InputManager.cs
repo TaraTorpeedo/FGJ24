@@ -28,35 +28,21 @@ public class InputManager : MonoBehaviour
         }
 
         playerControls = new PlayerControls();
-        Cursor.visible = false;
+       Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void OnEnable()
-    {
-        playerControls.Enable();
-    }
+    public void OnEnable() => playerControls.Enable();
 
-    public void OnDisable()
-    {
-        playerControls.Disable();
-    }
+    public void OnDisable() => playerControls.Disable();
 
-    public Vector2 GetPlayerMovement()
-    {
-        return playerControls.Player.Movement.ReadValue<Vector2>();
-    }
-    public Vector2 GetMouseDelta()
-    {
-        return playerControls.Player.Look.ReadValue<Vector2>();
-    }
+    public Vector2 GetPlayerMovement() => playerControls.Player.Movement.ReadValue<Vector2>();
+    public Vector2 GetMouseDelta() => playerControls.Player.Look.ReadValue<Vector2>();
 
-    public bool PlayerJumpedThisFrame()
-    {
-        return playerControls.Player.Jump.triggered;
-    }
+    public bool PlayerJumpedThisFrame() => playerControls.Player.Jump.triggered;
 
-    public bool PlayerInteracted()
-    {
-        return playerControls.Player.Interact.triggered;
-    }
+    public bool PlayerInteracted() => playerControls.Player.Interact.triggered;
+
+    public bool PlayerStartThrow() => playerControls.Player.Shoot.triggered;
+
+    public bool ReleaseThrow() => playerControls.Player.Shoot.WasReleasedThisFrame();
 }

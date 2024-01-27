@@ -6,13 +6,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private CharacterController controller;
     [SerializeField] private Transform throwPos;
     [SerializeField] private Vector3 throwDir = new Vector3(0,1,0);
-    [SerializeField] private GameObject objectToThrow;
     [SerializeField] private float cooldown;
     [SerializeField] private float throwForce = 10f;
     [SerializeField] private float maxForce = 20f;
     [SerializeField] private AudioClip throwObjectSound;
     [SerializeField] private LineRenderer lineRenderer;
-
+    [SerializeField] private GameObject[] projectiles;
 
     private bool readyToThrow;
     private Vector3 playerVelocity;
@@ -112,7 +111,25 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        var projectile = Instantiate(objectToThrow, throwPos.position, camTransform.rotation);
+        GameObject projectile = null;
+        var oldProjectileId = oldProjectile.GetComponent<FoodData>();
+
+        switch (oldProjectileId.FoodID)
+        {
+            case 0:
+                projectile = Instantiate(projectiles[0], throwPos.position, camTransform.rotation);
+                break;
+            case 1:
+                projectile = Instantiate(projectiles[1], throwPos.position, camTransform.rotation);
+                break;
+            case 2:
+                projectile = Instantiate(projectiles[2], throwPos.position, camTransform.rotation);
+                break;
+            case 3:
+                projectile = Instantiate(projectiles[3], throwPos.position, camTransform.rotation);
+                break;
+        }
+
         Destroy(oldProjectile.gameObject);
 
         var forceDirection = camTransform.transform.forward;

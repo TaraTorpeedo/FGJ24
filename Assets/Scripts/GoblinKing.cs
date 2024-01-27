@@ -12,6 +12,10 @@ public class GoblinKing : MonoBehaviour
     public string[] Jokes;
     public string[] JokesSecondPart;
 
+    public AudioSource source;
+    public AudioClip[] JokeClips;
+    public AudioClip[] JokeSecondPartClips;
+
     public LayerMask WhatIsGround, WhatIsPlayer;
 
     //Patrolling
@@ -131,10 +135,19 @@ public class GoblinKing : MonoBehaviour
     {
         int rnd = Random.Range(0, Jokes.Length);
 
+        Debug.Log(rnd);
+
         JokeText.text = Jokes[rnd];
+        source.clip = JokeClips[rnd];
+        source.Play();
         yield return new WaitForSeconds(Jokes[rnd].Length / JokeLengthDivider);
+
         JokeText.text = JokesSecondPart[rnd];
+        source.clip = JokeSecondPartClips[rnd];
+        source.Play();
         yield return new WaitForSeconds((JokesSecondPart[rnd].Length / JokeLengthDivider) + 1);
+
+
         JokeText.text = "";
         yield return new WaitForSeconds(1);
         JokeText.text = "";

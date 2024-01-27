@@ -6,16 +6,16 @@ using UnityEngine.AI;
 public class GoblinNPC : MonoBehaviour
 {
     public NavMeshAgent agent;
-    NavMeshPath path;
 
     public Transform GoblinKing;
 
     Vector3 EscapePoint;
 
-    bool isWalking = false;
+    public bool isWalking = false;
 
     private void Update()
     {
+
         if (!isWalking)
         {
             NewPoint();
@@ -23,7 +23,7 @@ public class GoblinNPC : MonoBehaviour
 
         float distanceToWalkPoint = Vector3.Distance(transform.position, EscapePoint);
 
-        if (distanceToWalkPoint <= agent.stoppingDistance)
+        if (distanceToWalkPoint <= agent.stoppingDistance+1)
         {
             isWalking = false;
         }
@@ -52,20 +52,17 @@ public class GoblinNPC : MonoBehaviour
             EscapePoint.z = GoblinKing.position.z + randomZ;
         }
 
-        path = new NavMeshPath();
-
         CalculateNewPoint();
 
     }
 
     void CalculateNewPoint()
     {
-        if (NavMesh.CalculatePath(transform.position, EscapePoint, NavMesh.AllAreas, path))
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(EscapePoint, out hit, 0.1f, 1 << NavMesh.GetAreaFromName("Walkable")))
         {
-            isWalking = true;
-            //move to target
-            agent.SetPath(path);
             agent.SetDestination(EscapePoint);
+            isWalking = true; 
         }
 
     }

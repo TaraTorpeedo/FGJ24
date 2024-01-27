@@ -686,88 +686,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6789000209524499965}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &462367745
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 462367746}
-  - component: {fileID: 462367747}
-  m_Layer: 0
-  m_Name: Point (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &462367746
+--- !u!4 &462367746 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6279982556858572208, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462367745}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.01, y: 0, z: 12.62}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714516650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &462367747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462367745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a795c8e20584d4fb4e28216cf74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &714516649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 714516650}
-  m_Layer: 0
-  m_Name: WalkPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &714516650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714516649}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.610759, y: 1.1, z: -1.3851002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1892225426}
-  - {fileID: 462367746}
-  - {fileID: 1050489744}
-  - {fileID: 1157249870}
-  - {fileID: 1538655091}
-  - {fileID: 1623764963}
-  - {fileID: 1182240081}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719630048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,138 +1038,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1050489743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1050489744}
-  - component: {fileID: 1050489745}
-  m_Layer: 0
-  m_Name: Point (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1050489744
+--- !u!4 &1050489744 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 266056007081262363, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050489743}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.24, y: 0, z: 13.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714516650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1050489745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050489743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a795c8e20584d4fb4e28216cf74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1157249869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1157249870}
-  - component: {fileID: 1157249871}
-  m_Layer: 0
-  m_Name: Point (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1157249870
+--- !u!4 &1157249870 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1826738672364260798, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157249869}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.27, y: 0, z: -12.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714516650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1157249871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157249869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a795c8e20584d4fb4e28216cf74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1182240080
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1182240081}
-  - component: {fileID: 1182240082}
-  m_Layer: 0
-  m_Name: Point (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1182240081
+--- !u!4 &1182240081 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3495968936874641224, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182240080}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.17, y: 0, z: -12.44}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714516650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1182240082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182240080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a795c8e20584d4fb4e28216cf74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1212064039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,145 +1088,18 @@ Transform:
   - {fileID: 236869533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1538655090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1538655091}
-  - component: {fileID: 1538655092}
-  m_Layer: 0
-  m_Name: Point (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1538655091
+--- !u!4 &1538655091 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 954682295953116414, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538655090}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.3, y: 0, z: -4.32}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714516650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1538655092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538655090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a795c8e20584d4fb4e28216cf74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1623764962
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1623764963}
-  - component: {fileID: 1623764964}
-  m_Layer: 0
-  m_Name: Point (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1623764963
+--- !u!4 &1623764963 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2348141895361146633, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623764962}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.59, y: 0, z: 5.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714516650}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1623764964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623764962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a795c8e20584d4fb4e28216cf74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1630060694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1630060696}
-  - component: {fileID: 1630060695}
-  m_Layer: 0
-  m_Name: GoblinManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1630060695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630060694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b5afc009aac7be49bcdc8bd9f107065, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Goblins:
-  - {fileID: 26718613839340639}
-  lifetime: 10
-  lifetimeThreshold: 3
-  SpawnPoint: {fileID: 962974088}
-  LaughClips:
-  - {fileID: 8300000, guid: e6d0feaf6cd75f348a75a442bc56a369, type: 3}
---- !u!4 &1630060696
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630060694}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5588064, y: -0.10796738, z: -4.372488}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1682998124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,37 +1393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727590594}
   m_CullTransparentMesh: 1
---- !u!1 &1765440044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1765440045}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1765440045
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765440044}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 1.387, z: 10.85}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787495381
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,9 +1707,9 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1892225426 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+  m_CorrespondingSourceObject: {fileID: 6615958746930611102, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
     type: 3}
-  m_PrefabInstance: {fileID: 3193687761221247062}
+  m_PrefabInstance: {fileID: 2064692613930893750}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1899562188
 GameObject:
@@ -2262,7 +1914,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.27333334
+  m_VoxelSize: 0.6766667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 8400e01176ff0644c8b3a3b8b499d6d6, type: 2}
   m_BuildHeightMesh: 0
@@ -2377,74 +2029,152 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6039706006463052473}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3193687761221247062
+--- !u!1001 &730015559468353522
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 714516650}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 1080242284397707033, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
+        type: 3}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 962974088}
+    - target: {fileID: 1080242284397707033, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
+        type: 3}
+      propertyPath: Goblins.Array.data[0]
+      value: 
+      objectReference: {fileID: 26718613839340639}
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.74
+      value: -3.5588064
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.10796738
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.82
+      value: -4.372488
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2093370508288552645, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 4659181259865133659, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867830075998202271, guid: 84ec6eaf110ac0845963e70fe7a4f3d7,
+    - target: {fileID: 5732069412480288498, guid: ebc5ff49e1316c74aaf9f120d66dbd0d,
         type: 3}
       propertyPath: m_Name
-      value: Point
+      value: GoblinManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 84ec6eaf110ac0845963e70fe7a4f3d7, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ebc5ff49e1316c74aaf9f120d66dbd0d, type: 3}
+--- !u!1001 &2064692613930893750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 320804421935581383, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_Name
+      value: WalkPoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.610759
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.3851002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300659072559160078, guid: 2e5d9b5d65e52954cb6612f50a09c60f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e5d9b5d65e52954cb6612f50a09c60f, type: 3}
 --- !u!1001 &6039706006463052473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2538,329 +2268,9 @@ PrefabInstance:
       objectReference: {fileID: 1212064040}
     - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
         type: 3}
-      propertyPath: source
-      value: 
-      objectReference: {fileID: 6789000209524499967}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
       propertyPath: JokeText
       value: 
       objectReference: {fileID: 1727590596}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Json_File
-      value: 
-      objectReference: {fileID: 4900000, guid: d6fff741282f5544e9721d01c8d4706a, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.size
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[0]
-      value: I used to play piano for seafood restaurants
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[1]
-      value: Why don't scientists trust atoms?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[2]
-      value: Why did the scarecrow become a successful motivational speaker?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[3]
-      value: Why did the chicken join a band?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[4]
-      value: 'How does a penguin build its house? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[5]
-      value: 'Why did the math book look sad? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[6]
-      value: 'Why couldn''t the bicycle stand up by itself? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[7]
-      value: 'What do you call a fish wearing a bowtie? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[8]
-      value: 'Why don''t skeletons fight each other? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[9]
-      value: 'What did one hat say to the other hat? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.size
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[10]
-      value: 'Why did the golfer bring two pairs of pants? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[11]
-      value: 'How do you organize a space party? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[12]
-      value: 'Why don''t scientists trust genetics? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[13]
-      value: 'Why don''t oysters donate to charity? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[14]
-      value: 'What did the janitor say when he jumped out of the closet? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[15]
-      value: 'Why did the tomato turn red? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[16]
-      value: 'What do you call a pile of cats? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[17]
-      value: 'Why did the bicycle fall over? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[18]
-      value: 'What''s brown and sticky? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[19]
-      value: 'Why did the coffee file a police report? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[20]
-      value: 'Why don''t skeletons fight each other? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[21]
-      value: 'What did one ocean say to the other ocean? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[22]
-      value: 'I told my wife she should embrace her mistakes. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[23]
-      value: 'I used to play piano by ear '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[24]
-      value: 'I told my computer I needed a break '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[25]
-      value: 'Parallel lines have so much in common. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[26]
-      value: Why did the coffee file a police report?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[27]
-      value: Why did the coffee file a police report?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[28]
-      value: Why did the coffee file a police report?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: Jokes.Array.data[29]
-      value: Why did the coffee file a police report?
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: LaughClips.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: e7392b49b7f709a489fcde42001e6c91, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 300a48cbc41626a41bb4070da271ba8c, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 9c2ed608820786346bd785ba558b62f2, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 79e093e742dea9d4eb33b6c24bb0d746, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: 1934f77384d63f94eb2582cc4bf53c7c, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: d717905468de2be45a268b0621503d13, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: 02b82a85e0a6b80418566cf1f670565c, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 85f0bcbb0863c4941a3e707ebdec6a9f, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: 34fd72685621b884eba3d605901c210c, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f59068caf2b7ae41bc8abc80bfc8b12, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[10]
-      value: 
-      objectReference: {fileID: 8300000, guid: 47af1f0f733dd5049aba9ca661afafac, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[11]
-      value: 
-      objectReference: {fileID: 8300000, guid: 664e8955b49c08248bf8481653bbfd32, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[12]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8db1a42141294c34096b4eca97f32af2, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[13]
-      value: 
-      objectReference: {fileID: 8300000, guid: 757f0365ec382f34996228a254bf11b0, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[14]
-      value: 
-      objectReference: {fileID: 8300000, guid: b796e804e34f00b44899f56f93902e93, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[15]
-      value: 
-      objectReference: {fileID: 8300000, guid: 664e8955b49c08248bf8481653bbfd32, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[16]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e91bd68452942449a1b55f7fff12d41, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[17]
-      value: 
-      objectReference: {fileID: 8300000, guid: 662ab51a90467d04caaa8adad6398b1f, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[18]
-      value: 
-      objectReference: {fileID: 8300000, guid: 446add409dc0a74419de1d9440a4eadb, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[19]
-      value: 
-      objectReference: {fileID: 8300000, guid: 24823f07194639b4cbd463bb79c3c785, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[20]
-      value: 
-      objectReference: {fileID: 8300000, guid: cc9addde961739443b835c9ae3e19152, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[21]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4aca979840b75e64da20cbdcfb52bef1, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[22]
-      value: 
-      objectReference: {fileID: 8300000, guid: d385e424a3aca5541bc267b3c3acfbbc, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[23]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3fda760edf4fc0543b9adcadeb572b46, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[24]
-      value: 
-      objectReference: {fileID: 8300000, guid: a5d68092dcc367c499fcbda3ae363e63, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[25]
-      value: 
-      objectReference: {fileID: 8300000, guid: ef19d0e62c7091e49b26d5937e523a80, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeClips.Array.data[26]
-      value: 
-      objectReference: {fileID: 8300000, guid: ef19d0e62c7091e49b26d5937e523a80, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: LaughClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 556f09048128aa047ad7dfd680c91d83, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: LaughClips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4a7cc6d9e1dacfd42943b0694a781972, type: 3}
     - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
         type: 3}
       propertyPath: walkPoints.Array.data[0]
@@ -2896,281 +2306,6 @@ PrefabInstance:
       propertyPath: walkPoints.Array.data[6]
       value: 
       objectReference: {fileID: 1182240081}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.size
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[0]
-      value: but I got tired of playing for mussels.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[1]
-      value: 'Because they make up everything! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[2]
-      value: 'Because he was outstanding in his field! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[3]
-      value: 'Because it had the drumsticks! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[4]
-      value: 'Igloos it together! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[5]
-      value: 'Because it had too many problems. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[6]
-      value: 'It was two-tired! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[7]
-      value: 'Sofishticated. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[8]
-      value: 'They don''t have the guts. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[9]
-      value: 'Stay here, I''m going on ahead! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.size
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[10]
-      value: 'In case he got a hole in one! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[11]
-      value: 'You planet. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[12]
-      value: 'Because it''s all in their genes! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[13]
-      value: 'Because they are shellfish. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[14]
-      value: 'Supplies! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[15]
-      value: 'Because it saw the salad dressing! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[16]
-      value: 'A meowtain. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[17]
-      value: 'Because it was two-tired! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[18]
-      value: 'A stick! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[19]
-      value: 'It got mugged. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[20]
-      value: 'They don''t have the guts! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[21]
-      value: 'Nothing, they just waved. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[22]
-      value: 'She gave me a hug. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[23]
-      value: 'but now I use my hands and fingers. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[24]
-      value: 'and now it won''t stop sending me vacation ads. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokesSecondPart.Array.data[25]
-      value: 'It''s a shame they''ll never meet. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: e31dac8e7f17567429056328d70f6b14, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e0b6c5c5a6f6d340846cd901729a0b8, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 47bd2f7ca6a68ce4a9d88f33cb20291d, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4ea40af284436b04184d51cd6554a212, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: d8bdcd844f4c15142bca4abfee303f9a, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 0c6b014c422d1964a91e9d51f9d5bebd, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8087e7047bf707945bbfd6e881fbd98c, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e15f19edb8cc0547bec143bca54a830, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: ed19776ba77891c47bd26029f0caf4c3, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: 18c97285099f808458faaa9eb2389723, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[10]
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ca770a2b699a794d84275180d0302a6, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[11]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e5a7a2f8afdad647989ccd55787ee18, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[12]
-      value: 
-      objectReference: {fileID: 8300000, guid: 532fb2792bd47d24ca63ffb52c984d9c, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[13]
-      value: 
-      objectReference: {fileID: 8300000, guid: 72cdb0b49a41abb458f19574af24f2fb, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[14]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5e578010c4cf90a49bbb4f2db066b710, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[15]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3e5a7a2f8afdad647989ccd55787ee18, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[16]
-      value: 
-      objectReference: {fileID: 8300000, guid: ff1ad24a23deeb14face3a8c5b067cd4, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[17]
-      value: 
-      objectReference: {fileID: 8300000, guid: afce5777583a5894ba7ec1b57ddd39f0, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[18]
-      value: 
-      objectReference: {fileID: 8300000, guid: 04c9263bfeb65b942be5eb635771312a, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[19]
-      value: 
-      objectReference: {fileID: 8300000, guid: c2c1d9cd7d45eaf47ac1f93f7dc426ce, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[20]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5654137f292eb70438fdfb45b98f0e97, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[21]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6e34024b85f865f4cb86da13b9ffdcb6, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[22]
-      value: 
-      objectReference: {fileID: 8300000, guid: da860e8ccc783b04ab3de46783deff11, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[23]
-      value: 
-      objectReference: {fileID: 8300000, guid: 1550d8e83b97a84428fcbcfdb41218e0, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[24]
-      value: 
-      objectReference: {fileID: 8300000, guid: 165d7f8602e24704da6fd89ac2e9a51d, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[25]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5c0e65d7b765dc74cb3b46f34fa6a07a, type: 3}
-    - target: {fileID: 3032959227847338993, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      propertyPath: JokeSecondPartClips.Array.data[26]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5c0e65d7b765dc74cb3b46f34fa6a07a, type: 3}
     - target: {fileID: 5600981206193543100, guid: a5b547513c0b33f4797fa2d50884413a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3224,114 +2359,76 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2971252584298639038, guid: a5b547513c0b33f4797fa2d50884413a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6789000209524499967}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b547513c0b33f4797fa2d50884413a, type: 3}
---- !u!1 &6789000209524499966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2971252584298639038, guid: a5b547513c0b33f4797fa2d50884413a,
-    type: 3}
-  m_PrefabInstance: {fileID: 6789000209524499965}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &6789000209524499967
-AudioSource:
+--- !u!1001 &7289386377528620414
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6789000209524499966}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5e578010c4cf90a49bbb4f2db066b710, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 0.9
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 148
-  DopplerLevel: 2.38
-  MinDistance: 0.54
-  MaxDistance: 45
-  Pan2D: 0
-  rolloffMode: 1
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
       value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
       value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593836701030270304, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215003529613550961, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnPoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e2fd3eada30d1c4db67f4bc5f1e69c7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3340,10 +2437,10 @@ SceneRoots:
   - {fileID: 1720414693}
   - {fileID: 1928110573}
   - {fileID: 6789000209524499965}
-  - {fileID: 714516650}
+  - {fileID: 2064692613930893750}
   - {fileID: 1787495385}
   - {fileID: 1899562191}
-  - {fileID: 1765440045}
+  - {fileID: 7289386377528620414}
   - {fileID: 6039706006463052473}
-  - {fileID: 1630060696}
+  - {fileID: 730015559468353522}
   - {fileID: 962974088}

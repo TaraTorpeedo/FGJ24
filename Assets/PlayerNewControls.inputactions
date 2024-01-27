@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "PlayerNewControls",
     "maps": [
         {
             "name": "Player",
@@ -45,6 +45,15 @@
                     "name": "Shoot",
                     "type": "Button",
                     "id": "67bf028d-0a68-402b-a249-7fb821f2c0af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "07656ae8-34a8-4a44-a11c-f943f0602b48",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -159,6 +168,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b18c5e20-c734-442a-9f2a-90a83e2bf544",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

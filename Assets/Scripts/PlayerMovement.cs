@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -16,7 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private bool readyToThrow;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
+    public float playerSpeed = 3.0f;
+    public float sprintSpeed = 10.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
     private InputManager inputManager;
@@ -44,7 +46,16 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = new Vector3(movement.x, 0f, movement.y);
         move = camTransform.forward * move.z + camTransform.right * move.x;
         move.y = 0f;
-        controller.Move(move * Time.deltaTime * playerSpeed);
+
+        if(inputManager.IsSprinting() && !inputManager.ReleaseSprint())
+        {
+            controller.Move(move * Time.deltaTime * sprintSpeed);
+        }
+        else
+        {
+            controller.Move(move * Time.deltaTime * playerSpeed);
+        }
+  
 
         if (inputManager.PlayerJumpedThisFrame() && groundedPlayer)
         {

@@ -13,9 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private GameObject[] projectiles;
 
-    //objects
-    private FoodObject[] foods;
-
     private bool readyToThrow;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
@@ -33,8 +30,6 @@ public class PlayerMovement : MonoBehaviour
         inputManager = InputManager.Instance;
         camTransform = Camera.main.transform;
         readyToThrow = true;
-
-        foods = FindObjectsOfType<FoodObject>();
     }
 
     void Update()
@@ -117,25 +112,22 @@ public class PlayerMovement : MonoBehaviour
         }
 
         GameObject projectile = null;
+        var oldProjectileId = oldProjectile.GetComponent<FoodData>();
 
-        for(int i = 0; i < foods.Length; ++i)
+        switch (oldProjectileId.FoodID)
         {
-            switch (foods[i].FoodID)
-            {
-                case 0:
-                    projectile = Instantiate(projectiles[0], throwPos.position, camTransform.rotation);
-                    break;
-                case 1:
-                    projectile = Instantiate(projectiles[1], throwPos.position, camTransform.rotation);
-                    break;
-                case 2:
-                    projectile = Instantiate(projectiles[2], throwPos.position, camTransform.rotation);
-                    break;
-                case 3:
-                    projectile = Instantiate(projectiles[3], throwPos.position, camTransform.rotation);
-                    break;
-            }
-            break;
+            case 0:
+                projectile = Instantiate(projectiles[0], throwPos.position, camTransform.rotation);
+                break;
+            case 1:
+                projectile = Instantiate(projectiles[1], throwPos.position, camTransform.rotation);
+                break;
+            case 2:
+                projectile = Instantiate(projectiles[2], throwPos.position, camTransform.rotation);
+                break;
+            case 3:
+                projectile = Instantiate(projectiles[3], throwPos.position, camTransform.rotation);
+                break;
         }
 
         Destroy(oldProjectile.gameObject);

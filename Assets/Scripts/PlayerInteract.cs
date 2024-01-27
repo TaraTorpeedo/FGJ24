@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera cam;
-    [SerializeField] private float distance = 3f;
+    [SerializeField] private float distance = 5f;
     [SerializeField] private LayerMask mask;
     [SerializeField] private PlayerUI playerUI;
     private InputManager inputManager;

@@ -185,13 +185,16 @@ MonoBehaviour:
   controller: {fileID: 133261638}
   throwPos: {fileID: 662620025}
   throwDir: {x: 0, y: 1, z: 0}
-  objectToThrow: {fileID: 1803226036501363133, guid: 7537b7ae6b83bf948a403759426123af,
-    type: 3}
   cooldown: 1
   throwForce: 10
   maxForce: 20
   throwObjectSound: {fileID: 8300000, guid: 834003da3386bcd4eb5c2f2f0ee62120, type: 3}
   lineRenderer: {fileID: 133261643}
+  projectiles:
+  - {fileID: 2629127272418962556, guid: cf4d261b7ac36aa4dbd1b60667ab5612, type: 3}
+  - {fileID: 7151594660703261423, guid: c56205a62328a1f4fa159ef55bf89fb8, type: 3}
+  - {fileID: 5073589500609218522, guid: 1826e54691cbf064eb8adade88fe36b8, type: 3}
+  - {fileID: 9100271328223055971, guid: 786479d1d32b3784488961f7fe29ced2, type: 3}
 --- !u!4 &133261640
 Transform:
   m_ObjectHideFlags: 0
@@ -740,6 +743,90 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1001 &442825100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 74929720393970374, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: food
+      value: 
+      objectReference: {fileID: 2629127272418962556, guid: 592f6ae56c102db4c8aeee57fd8690cd,
+        type: 3}
+    - target: {fileID: 74929720393970374, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 662620024}
+    - target: {fileID: 2629127272418962556, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_Name
+      value: CollectableFoodMeat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629127272418962556, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8dc465f46b6c8b242be3b0a23bd18bf1, type: 3}
 --- !u!1 &572435286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1101,8 @@ MonoBehaviour:
   promptMessage: "Kukkuu kananp\xE4\xE4"
   weapon: {fileID: 662620024}
   food: {fileID: 1803226036501363133, guid: 4459b735890520e4bb381c0e339d6a9f, type: 3}
+  id: 0
+  cooldown: 10
 --- !u!65 &788839299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1135,6 +1224,8 @@ MonoBehaviour:
   promptMessage: "Kukkuu kananp\xE4\xE4"
   weapon: {fileID: 662620024}
   food: {fileID: 1803226036501363133, guid: 4459b735890520e4bb381c0e339d6a9f, type: 3}
+  id: 0
+  cooldown: 10
 --- !u!65 &794807091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1959,6 +2050,8 @@ MonoBehaviour:
   promptMessage: "Kukkuu kananp\xE4\xE4"
   weapon: {fileID: 662620024}
   food: {fileID: 1803226036501363133, guid: 4459b735890520e4bb381c0e339d6a9f, type: 3}
+  id: 0
+  cooldown: 10
 --- !u!1 &1787216997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2298,8 @@ MonoBehaviour:
   promptMessage: "Kukkuu kananp\xE4\xE4"
   weapon: {fileID: 662620024}
   food: {fileID: 1803226036501363133, guid: 4459b735890520e4bb381c0e339d6a9f, type: 3}
+  id: 0
+  cooldown: 10
 --- !u!65 &2036709935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2643,3 +2738,4 @@ SceneRoots:
   - {fileID: 1557105675}
   - {fileID: 3195330399953045257}
   - {fileID: 2096861793}
+  - {fileID: 442825100}

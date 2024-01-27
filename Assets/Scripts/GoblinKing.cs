@@ -67,8 +67,6 @@ public class GoblinKing : MonoBehaviour
 
     private void Update()
     {
-
-        Debug.Log(agent.speed);
         MicCatch();
         float distance = Vector3.Distance(Player.transform.position, transform.position);
 

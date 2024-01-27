@@ -28,7 +28,6 @@ public class InputManager : MonoBehaviour
         }
 
         playerControls = new PlayerNewControls();
-       Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OnEnable() => playerControls.Enable();
@@ -49,4 +48,17 @@ public class InputManager : MonoBehaviour
     public bool IsSprinting() => playerControls.Player.Sprint.IsPressed();
 
     public bool ReleaseSprint() => playerControls.Player.Sprint.WasReleasedThisFrame();
+
+    public void SetCurscorVisible(bool visible)
+    {
+        if (!visible)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+    }
+
 }

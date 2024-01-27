@@ -22,9 +22,9 @@ public class MenuUI : MonoBehaviour
   
     public void StartGame()
     {
-        CreditsMenu.SetActive(false);
-        StartMenu.SetActive(false);
-        InfoMenu.SetActive(false);
+        gameObject.SetActive(false);
+
+        GameManager.Instance.StartGame();
     }
 
     public void OpenCredits()

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2155323282269165258}
   - component: {fileID: 4666161137122423378}
   - component: {fileID: 2751658636488255226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

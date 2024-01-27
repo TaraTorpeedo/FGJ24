@@ -6,13 +6,7 @@ public class Interactable : MonoBehaviour
 {
     public string promptMessage;
 
-    public void BaseInteract()
-    {
-        Interact();
-    }
+    public void BaseInteract() => Interact();
 
-    protected virtual void Interact()
-    {
-
-    }
+    protected virtual void Interact(){}
 }

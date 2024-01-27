@@ -16,6 +16,8 @@ public class GoblinKing : MonoBehaviour
     public AudioClip[] JokeClips;
     public AudioClip[] JokeSecondPartClips;
 
+    public AudioClip[] LaughClips;
+
     public LayerMask WhatIsGround, WhatIsPlayer;
 
     //Patrolling
@@ -34,6 +36,8 @@ public class GoblinKing : MonoBehaviour
     public int JokeLengthDivider;
 
     public TextMeshProUGUI JokeText;
+
+    int jokeBefore = 0;
 
 
     private void Update()
@@ -134,8 +138,24 @@ public class GoblinKing : MonoBehaviour
     IEnumerator TellJoke()
     {
         int rnd = Random.Range(0, Jokes.Length);
+        if(rnd == jokeBefore)
+        {
+            if(rnd < Jokes.Length)
+            {
+                rnd += 1;
+            }
+            else
+            {
+                rnd -= 1;
+            }
+        }
 
-        Debug.Log(rnd);
+        jokeBefore = rnd;
+
+        int laughRandom = Random.Range(0, 4);
+
+        source.pitch = 0.9f;
+        source.volume = 1f;
 
         JokeText.text = Jokes[rnd];
         source.clip = JokeClips[rnd];
@@ -145,8 +165,26 @@ public class GoblinKing : MonoBehaviour
         JokeText.text = JokesSecondPart[rnd];
         source.clip = JokeSecondPartClips[rnd];
         source.Play();
-        yield return new WaitForSeconds((JokesSecondPart[rnd].Length / JokeLengthDivider) + 1);
 
+        //Laugh
+        if(laughRandom == 1)
+        {
+            yield return new WaitForSeconds((JokesSecondPart[rnd].Length / JokeLengthDivider));
+            JokeText.text = "";
+            source.pitch = 0.8f;
+            source.volume = 0.8f;
+
+            int laughClipRnd = Random.Range(0, LaughClips.Length);        
+
+            source.clip = LaughClips[laughClipRnd];
+            source.Play();
+            yield return new WaitForSeconds(source.clip.length);
+        }
+        else
+        {
+
+            yield return new WaitForSeconds((JokesSecondPart[rnd].Length / JokeLengthDivider) + 1);
+        }
 
         JokeText.text = "";
         yield return new WaitForSeconds(1);

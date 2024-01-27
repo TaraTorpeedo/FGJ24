@@ -13,6 +13,8 @@ public class GoblinNPC : MonoBehaviour
 
     public bool isWalking = false;
 
+    public AudioSource source;
+
     private void Update()
     {
 

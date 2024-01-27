@@ -9,11 +9,15 @@ public class AudioDetection : MonoBehaviour
 
     public void MicrophoneToAudioClip()
     {
-        string microphoneName = Microphone.devices[0];
+        string microphoneName = Microphone.devices[1];
+
+        Debug.Log(microphoneName);
+
         microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate);
+
     }
 
-    public float GetLoudnessFromMicrophone() => GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[0]), microphoneClip);
+    public float GetLoudnessFromMicrophone() => GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[1]), microphoneClip);
 
     private float GetLoudnessFromAudioClip(int clipPos, AudioClip audioClip)
     {

@@ -1,19 +1,40 @@
+using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioDetection : MonoBehaviour
 {
     [SerializeField] private int sampleWindow = 64;
     private AudioClip microphoneClip;
+    [SerializeField] TMP_Dropdown dropdown;
 
-    public void Start() => MicrophoneToAudioClip();
+    private int micValue = 0;
 
-    public void MicrophoneToAudioClip()
+    public void Start()
     {
-        string microphoneName = Microphone.devices[0];
+        MicrophoneToAudioClip(micValue);
+
+        dropdown.onValueChanged.AddListener(delegate
+        {
+            DropdownValueChanged(dropdown);
+        });
+    }
+
+    private void DropdownValueChanged(TMP_Dropdown change)
+    {
+        MicrophoneToAudioClip(change.value);
+        micValue = change.value;
+    }
+
+    public void MicrophoneToAudioClip(int micId)
+    {
+        string microphoneName = Microphone.devices[micId];
         microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate);
     }
 
-    public float GetLoudnessFromMicrophone() => GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[0]), microphoneClip);
+    public float GetLoudnessFromMicrophone() => GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[micValue]), microphoneClip);
 
     private float GetLoudnessFromAudioClip(int clipPos, AudioClip audioClip)
     {

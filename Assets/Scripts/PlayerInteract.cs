@@ -1,9 +1,11 @@
 using Cinemachine;
+using Unity.Mathematics;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera cam;
+    [SerializeField] private Camera cam;
     [SerializeField] private float distance = 5f;
     [SerializeField] private LayerMask mask;
     [SerializeField] private PlayerUI playerUI;
@@ -19,7 +21,7 @@ public class PlayerInteract : MonoBehaviour
 
         if(Physics.Raycast(ray, out hitInfo, distance, mask))
         {
-            if(hitInfo.collider.GetComponent<Interactable>() != null)
+            if(hitInfo.collider.gameObject.GetComponent<Interactable>() != null)
             {
                 var interactable = hitInfo.collider.gameObject.GetComponent<Interactable>();
                 playerUI.UpdateText(interactable.promptMessage);
@@ -30,5 +32,20 @@ public class PlayerInteract : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.GetComponent<Interactable>())
+        {
+            var interactable = other.gameObject.GetComponent<Interactable>();
+            interactable.BaseInteract();
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, distance);
     }
 }

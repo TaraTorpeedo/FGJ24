@@ -34,15 +34,6 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.GetComponent<Interactable>())
-        {
-            var interactable = other.gameObject.GetComponent<Interactable>();
-            interactable.BaseInteract();
-        }
-    }
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

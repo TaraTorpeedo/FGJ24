@@ -253,11 +253,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectableFoodCake
       objectReference: {fileID: 0}
-    - target: {fileID: 5073589500609218522, guid: 57e96e1ab27255c4094c25486b0b6558,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5558236241046445408, guid: 57e96e1ab27255c4094c25486b0b6558,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,15 +303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5788419750762940500, guid: 57e96e1ab27255c4094c25486b0b6558, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5073589500609218522, guid: 57e96e1ab27255c4094c25486b0b6558,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1886090752}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57e96e1ab27255c4094c25486b0b6558, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -446,12 +436,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 74929720393970374, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
         type: 3}
-      propertyPath: food
-      value: 
-      objectReference: {fileID: 2629127272418962556, guid: 592f6ae56c102db4c8aeee57fd8690cd,
-        type: 3}
-    - target: {fileID: 74929720393970374, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
-        type: 3}
       propertyPath: weapon
       value: 
       objectReference: {fileID: 662620024}
@@ -459,11 +443,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CollectableFoodMeat
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629127272418962556, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3402286997658842822, guid: 8dc465f46b6c8b242be3b0a23bd18bf1,
         type: 3}
@@ -543,11 +522,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CollectableFoodFish
-      objectReference: {fileID: 0}
-    - target: {fileID: 7151594660703261423, guid: 65eb7d4c4403d5e4eb2596a03bf3a58d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7526713275803502677, guid: 65eb7d4c4403d5e4eb2596a03bf3a58d,
         type: 3}
@@ -798,60 +772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1749866284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9100271328223055971, guid: 3de9142ef3981cf429709ec28ec0fbd0,
-    type: 3}
-  m_PrefabInstance: {fileID: 2000543822}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1749866289
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749866284}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.69646335, y: 0.6964633, z: 1.060468}
-  m_Center: {x: -0.0000001937151, y: 0.3482314, z: 0.032279804}
---- !u!1 &1886090747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5073589500609218522, guid: 57e96e1ab27255c4094c25486b0b6558,
-    type: 3}
-  m_PrefabInstance: {fileID: 406051961}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1886090752
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886090747}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.022129, y: 0.4148251, z: 1.0747297}
-  m_Center: {x: -0.000009924173, y: 0.20741262, z: -0.00007507205}
 --- !u!1001 &2000543822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -860,16 +780,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5911627550500238394, guid: 3de9142ef3981cf429709ec28ec0fbd0,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5911627550500238394, guid: 3de9142ef3981cf429709ec28ec0fbd0,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6923279479033349466, guid: 3de9142ef3981cf429709ec28ec0fbd0,
         type: 3}
       propertyPath: weapon
@@ -930,20 +840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectableFoodMelon
       objectReference: {fileID: 0}
-    - target: {fileID: 9100271328223055971, guid: 3de9142ef3981cf429709ec28ec0fbd0,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5911627550500238394, guid: 3de9142ef3981cf429709ec28ec0fbd0, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9100271328223055971, guid: 3de9142ef3981cf429709ec28ec0fbd0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1749866289}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de9142ef3981cf429709ec28ec0fbd0, type: 3}
 --- !u!4 &2119838673 stripped
 Transform:

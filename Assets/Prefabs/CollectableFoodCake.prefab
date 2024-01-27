@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8830725425824633541}
   - component: {fileID: 6731191172386612751}
   - component: {fileID: 3877958463721075229}
-  - component: {fileID: 5788419750762940500}
+  - component: {fileID: 4638098434393657287}
   m_Layer: 8
   m_Name: CollectableFoodCake
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5073589500609218522}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -100,9 +100,8 @@ MonoBehaviour:
   promptMessage: '[E] COLLECT FOOD'
   weapon: {fileID: 0}
   food: {fileID: 5073589500609218522, guid: 4cdd0f536b998c141987f5362d20d263, type: 3}
-  id: 2
   cooldown: 10
---- !u!64 &5788419750762940500
+--- !u!64 &4638098434393657287
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

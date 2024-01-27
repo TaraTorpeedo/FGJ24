@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4804957859275539836}
   - component: {fileID: 7298739600045371830}
   - component: {fileID: 6923279479033349466}
-  - component: {fileID: 5911627550500238394}
+  - component: {fileID: 5086185308698158457}
   m_Layer: 8
   m_Name: CollectableFoodMelon
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9100271328223055971}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -100,9 +100,8 @@ MonoBehaviour:
   promptMessage: '[E] COLLECT FOOD'
   weapon: {fileID: 0}
   food: {fileID: 9100271328223055971, guid: 2c49621a8650a60459ee1c1548bee1d4, type: 3}
-  id: 3
   cooldown: 10
---- !u!64 &5911627550500238394
+--- !u!64 &5086185308698158457
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

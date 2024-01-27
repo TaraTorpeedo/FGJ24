@@ -9,6 +9,7 @@ public class GoblinManager : MonoBehaviour
     public int lifetimeThreshold;
 
     public Transform SpawnPoint;
+    public AudioClip[] LaughClips;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,12 @@ public class GoblinManager : MonoBehaviour
 
         Goblins[RandomGoblin].GetComponent<GoblinNPC>().agent.SetDestination(Goblins[RandomGoblin].transform.position);
         Goblins[RandomGoblin].GetComponent<GoblinNPC>().isWalking = true; //Stops walking
-        yield return new WaitForSeconds(2); //Animation time
+
+        int laughRnd = Random.Range(0, LaughClips.Length);
+        Goblins[RandomGoblin].GetComponent<GoblinNPC>().source.clip = LaughClips[laughRnd];
+        Goblins[RandomGoblin].GetComponent<GoblinNPC>().source.Play();
+
+        yield return new WaitForSeconds(LaughClips[laughRnd].length + 1); //Audio time
 
         Goblins[RandomGoblin].SetActive(false);
         Goblins[RandomGoblin].transform.position = SpawnPoint.position;

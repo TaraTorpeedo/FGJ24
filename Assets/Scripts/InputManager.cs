@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    private PlayerControls playerControls;
+    private PlayerNewControls playerControls;
 
     private static InputManager instance;
 
@@ -27,7 +27,7 @@ public class InputManager : MonoBehaviour
             instance = this;
         }
 
-        playerControls = new PlayerControls();
+        playerControls = new PlayerNewControls();
        Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -45,4 +45,8 @@ public class InputManager : MonoBehaviour
     public bool PlayerStartThrow() => playerControls.Player.Shoot.triggered;
 
     public bool ReleaseThrow() => playerControls.Player.Shoot.WasReleasedThisFrame();
+
+    public bool IsSprinting() => playerControls.Player.Sprint.IsPressed();
+
+    public bool ReleaseSprint() => playerControls.Player.Sprint.WasReleasedThisFrame();
 }

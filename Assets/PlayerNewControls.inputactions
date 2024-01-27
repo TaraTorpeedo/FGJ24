@@ -53,7 +53,7 @@
                 {
                     "name": "Sprint",
                     "type": "Button",
-                    "id": "3f50cc3a-49d1-4b7c-89c1-bce09979b05f",
+                    "id": "07656ae8-34a8-4a44-a11c-f943f0602b48",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -173,7 +173,7 @@
                 },
                 {
                     "name": "",
-                    "id": "621af25b-aa59-46b5-ad2f-ac8e2055de8a",
+                    "id": "b18c5e20-c734-442a-9f2a-90a83e2bf544",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",

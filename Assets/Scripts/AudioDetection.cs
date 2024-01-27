@@ -32,6 +32,7 @@ public class AudioDetection : MonoBehaviour
     {
         string microphoneName = Microphone.devices[micId];
         microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate);
+
     }
 
     public float GetLoudnessFromMicrophone() => GetLoudnessFromAudioClip(Microphone.GetPosition(Microphone.devices[micValue]), microphoneClip);
@@ -58,28 +59,4 @@ public class AudioDetection : MonoBehaviour
 
         return totalLoudness / sampleWindow;
     }
-
-    //Goblin king will have this
-
-    /*
-     [SerializeField] private AudioDetection audioDetector;
-    [SerializeField] private float loudnessSensibility = 100;
-    [SerializeField] private float threshold = 0.1f;
-    [SerializeField] private GameObject player;
-
-    public void Update()
-    {
-        float loudness = audioDetector.GetLoudnessFromMicrophone() * loudnessSensibility;
-
-        if (loudness >= threshold)
-        {
-        transform.localScale = Vector3.Lerp(new Vector3(1, 1, 1), new Vector3(2, 2, 2), loudness);
-        }
-        else
-        {
-            loudness = 0;
-        }
-    }
-
-     */
 }

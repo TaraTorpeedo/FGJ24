@@ -53,6 +53,8 @@ public class GoblinKing : MonoBehaviour
 
     bool canAttack = true;
 
+    public Animator animator;
+
     void MicCatch()
     {
         float loudness = audioDetector.GetLoudnessFromMicrophone() * loudnessSensibility;
@@ -73,6 +75,15 @@ public class GoblinKing : MonoBehaviour
 
     private void Update()
     {
+        if(transform.hasChanged)
+        {
+            animator.SetBool("Walk", true);
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
+        }
+
         MicCatch();
         float distance = Vector3.Distance(Player.transform.position, transform.position);
 
@@ -108,7 +119,7 @@ public class GoblinKing : MonoBehaviour
             }
             if (playerInSightRange && !playerInAttackRange)
             {
-                ChasePlayer(3.5f);
+                ChasePlayer(2f);
             }
             if (playerInAttackRange && playerInSightRange)
             {
@@ -123,7 +134,7 @@ public class GoblinKing : MonoBehaviour
         }
         else
         {
-            ChasePlayer(10f);
+            ChasePlayer(5f);
         }
 
     }

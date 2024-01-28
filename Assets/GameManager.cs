@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public GameObject loseCanvas;
     public GameObject winCanvas;
 
+    public GameObject GameUI;
+
     // Start is called before the first frame update
     public static GameManager Instance;
 
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
                     player.SetActive(true);
                     king.SetActive(true);
                     goblinManager.SetActive(true);
+                    GameUI.SetActive(true);
 
                     foreach (var goblin in goblins)
                     {
@@ -85,6 +88,8 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         king.SetActive(false);
         goblinManager.SetActive(false);
+        GameUI.SetActive(false);
+        InputManager.Instance.SetCurscorVisible(true);
 
         foreach (var goblin in goblins)
         {
@@ -107,6 +112,8 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         king.SetActive(false);
         goblinManager.SetActive(false);
+        GameUI.SetActive(false);
+        InputManager.Instance.SetCurscorVisible(true);
 
         foreach (var goblin in goblins)
         {

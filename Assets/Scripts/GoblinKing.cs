@@ -304,7 +304,7 @@ public class GoblinKing : MonoBehaviour
         hpSlider.value = health;
         if(health > 100)
         {
-            //WIN
+            GameManager.Instance.WinGame();
         }
     }
 }

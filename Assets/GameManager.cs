@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public GameObject StartCanvas;
     public GameObject player;
     public GameObject king;
-    public GameObject[] goblins;
     public GameObject goblinManager;
     public GameObject playerVirtualCamera;
 
@@ -34,7 +33,21 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        var goblins = FindObjectsOfType<GoblinNPC>();
+        var foods = FindObjectsOfType<Interactable>();
+
+        foreach (var goblin in goblins)
+        {
+            goblin.gameObject.SetActive(false);
+        }
+
+        foreach (var food in foods)
+        {
+            food.gameObject.SetActive(false);
+        }
+
         StartCanvas.SetActive(true);
+
     }
 
     // Update is called once per frame
@@ -51,9 +64,17 @@ public class GameManager : MonoBehaviour
                     player.SetActive(true);
                     king.SetActive(true);
                     goblinManager.SetActive(true);
+                    var goblins = FindObjectsOfType<GoblinNPC>();
+                    var foods = FindObjectsOfType<Interactable>();
+
                     foreach (var goblin in goblins)
                     {
-                        goblin.gameObject.SetActive(true);
+                        goblin.gameObject.SetActive(false);
+                    }
+
+                    foreach (var food in foods)
+                    {
+                        food.gameObject.SetActive(false);
                     }
                 }
             }
@@ -66,9 +87,17 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         king.SetActive(false);
         goblinManager.SetActive(false);
+        var goblins = FindObjectsOfType<GoblinNPC>();
+        var foods = FindObjectsOfType<Interactable>();
+
         foreach (var goblin in goblins)
         {
             goblin.gameObject.SetActive(false);
+        }
+
+        foreach (var food in foods)
+        {
+            food.gameObject.SetActive(false);
         }
 
         winCanvas.SetActive(true);
@@ -82,9 +111,17 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         king.SetActive(false);
         goblinManager.SetActive(false);
+        var goblins = FindObjectsOfType<GoblinNPC>();
+        var foods = FindObjectsOfType<Interactable>();
+
         foreach (var goblin in goblins)
         {
             goblin.gameObject.SetActive(false);
+        }
+
+        foreach (var food in foods)
+        {
+            food.gameObject.SetActive(false);
         }
 
         loseCanvas.SetActive(true);

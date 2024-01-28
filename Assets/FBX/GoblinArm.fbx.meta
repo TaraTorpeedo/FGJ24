@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GoblinGreen
-    second: {fileID: 5666175517448931708, guid: f2142b20ab72912488f776c1b8eb1de4,
+    second: {fileID: 5666175517448931708, guid: 409d4d52b8bee37429f3931feb9303ea,
       type: 3}
   materials:
     materialImportMode: 2

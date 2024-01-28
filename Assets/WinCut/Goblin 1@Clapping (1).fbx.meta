@@ -1,15 +1,9 @@
 fileFormatVersion: 2
-guid: a892e6197fd62e24abed0ecaba0aa754
+guid: 97a151e03c39473458dfa84f0b6f21e9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: GoblinGreen
-    second: {fileID: 5666175517448931708, guid: 409d4d52b8bee37429f3931feb9303ea,
-      type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

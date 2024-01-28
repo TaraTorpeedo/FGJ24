@@ -17,7 +17,10 @@ public class MenuUI : MonoBehaviour
 
     public void Start()
     {
-        DropdownValues();
+        if (dropdown)
+        {
+            DropdownValues();
+        }
     }
   
     public void StartGame()

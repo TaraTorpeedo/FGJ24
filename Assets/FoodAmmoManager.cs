@@ -7,12 +7,7 @@ public class FoodAmmoManager : MonoBehaviour
 {
     [SerializeField]
     private float cooldown = 10f;
-    private FoodObject[] foodObjects;
-
-    public void Start()
-    {
-        foodObjects = FindObjectsOfType<FoodObject>();
-    }
+    public FoodObject[] foodObjects;
 
     void Update()
     {

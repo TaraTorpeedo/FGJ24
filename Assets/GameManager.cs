@@ -15,8 +15,13 @@ public class GameManager : MonoBehaviour
     public GameObject goblinManager;
     public GameObject playerVirtualCamera;
 
+    public GameObject[] goblins;
+    public GameObject[] foods;
+
     public GameObject loseCanvas;
     public GameObject winCanvas;
+
+    public GameObject GameUI;
 
     // Start is called before the first frame update
     public static GameManager Instance;
@@ -32,9 +37,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        var goblins = FindObjectsOfType<GoblinNPC>();
-        var foods = FindObjectsOfType<Interactable>();
 
         foreach (var goblin in goblins)
         {
@@ -64,17 +66,16 @@ public class GameManager : MonoBehaviour
                     player.SetActive(true);
                     king.SetActive(true);
                     goblinManager.SetActive(true);
-                    var goblins = FindObjectsOfType<GoblinNPC>();
-                    var foods = FindObjectsOfType<Interactable>();
+                    GameUI.SetActive(true);
 
                     foreach (var goblin in goblins)
                     {
-                        goblin.gameObject.SetActive(false);
+                        goblin.gameObject.SetActive(true);
                     }
 
                     foreach (var food in foods)
                     {
-                        food.gameObject.SetActive(false);
+                        food.gameObject.SetActive(true);
                     }
                 }
             }
@@ -87,8 +88,8 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         king.SetActive(false);
         goblinManager.SetActive(false);
-        var goblins = FindObjectsOfType<GoblinNPC>();
-        var foods = FindObjectsOfType<Interactable>();
+        GameUI.SetActive(false);
+        InputManager.Instance.SetCurscorVisible(true);
 
         foreach (var goblin in goblins)
         {
@@ -111,8 +112,8 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         king.SetActive(false);
         goblinManager.SetActive(false);
-        var goblins = FindObjectsOfType<GoblinNPC>();
-        var foods = FindObjectsOfType<Interactable>();
+        GameUI.SetActive(false);
+        InputManager.Instance.SetCurscorVisible(true);
 
         foreach (var goblin in goblins)
         {

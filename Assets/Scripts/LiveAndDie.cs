@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class LiveAndDie : MonoBehaviour
 {
-    public GameObject Goblin;
-    public Transform SpawnPoint;
 
     void Start()
     {
@@ -15,20 +13,7 @@ public class LiveAndDie : MonoBehaviour
 
     IEnumerator DieAndRespawn()
     {
-        int random = Random.Range(5, 20);
-
-        yield return new WaitForSeconds(random);
-
-        //Do animation
-        yield return new WaitForSeconds(2); //Animation time
-        Goblin.SetActive(false);
-
-        transform.position = SpawnPoint.position;
-
-        yield return new WaitForSeconds(2);
-        Goblin.SetActive(true);
-
-
-        StartCoroutine(DieAndRespawn());
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 }

@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         }
 
         StartCanvas.SetActive(true);
-
+        InputManager.Instance.SetCurscorVisible(true);
     }
 
     // Update is called once per frame
@@ -132,5 +132,6 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         startPlayableDirector.Play();
+        InputManager.Instance.SetCurscorVisible(false);
     }
 }

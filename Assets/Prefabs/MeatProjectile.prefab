@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileRB: {fileID: 7207648037552066746}
-  hitEffect: {fileID: 4914716930404006884, guid: aed12c224fbc8704d8eaa07a52e88f44,
+  hitEffect: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55,
     type: 3}
   explosionDelay: 0.1
   explosionRadius: 5

@@ -24,7 +24,9 @@ public class GoblinKing : MonoBehaviour
     bool isYelling;
     bool ableToYell;
 
-    public LayerMask WhatIsGround, WhatIsPlayer;
+    public LayerMask WhatIsPlayer;
+
+    private LayerMask WhatIsGround = 3;
 
     //Patrolling
     public Vector3 walkPoint;
@@ -67,7 +69,9 @@ public class GoblinKing : MonoBehaviour
 
     private void Update()
     {
-        MicCatch();
+
+        Debug.Log(agent.speed);
+        //MicCatch();
         float distance = Vector3.Distance(Player.transform.position, transform.position);
 
         if (!isYelling)
@@ -173,7 +177,6 @@ public class GoblinKing : MonoBehaviour
     }
     private IEnumerator AttackPlayer()
     {
-        Debug.Log("Attack");
         canAttack = false;
         yield return new WaitForSeconds(1);
         Player.GetComponent<PlayerHealth>().TakeDamage(1);

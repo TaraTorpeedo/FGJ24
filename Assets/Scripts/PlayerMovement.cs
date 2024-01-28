@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -45,9 +46,9 @@ public class PlayerMovement : MonoBehaviour
         Vector2 movement = inputManager.GetPlayerMovement();
         Vector3 move = new Vector3(movement.x, 0f, movement.y);
         move = camTransform.forward * move.z + camTransform.right * move.x;
-        move.y = 0f;
+        move.y = 0;
 
-        if(inputManager.IsSprinting() && !inputManager.ReleaseSprint())
+        if (inputManager.IsSprinting() && !inputManager.ReleaseSprint())
         {
             controller.Move(move * Time.deltaTime * sprintSpeed);
         }

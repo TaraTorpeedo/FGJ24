@@ -15,8 +15,21 @@ public class GoblinNPC : MonoBehaviour
 
     public AudioSource source;
 
+    public Animator animator;
+
+    Vector3 lastPos;
+
     private void Update()
     {
+
+        if(transform.hasChanged)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
 
         if (!isWalking)
         {

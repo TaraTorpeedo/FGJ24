@@ -3,9 +3,13 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class GoblinKing : MonoBehaviour
 {
+
+    public int health = 0;
+    public Slider hpSlider;
 
     public NavMeshAgent agent;
     public Transform Player;
@@ -292,5 +296,15 @@ public class GoblinKing : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
+    public void TakeFood(int damage)
+    {
+        health += damage;
+        hpSlider.value = health;
+        if(health > 100)
+        {
+            //WIN
+        }
     }
 }

@@ -299,7 +299,7 @@ public class GoblinKing : MonoBehaviour
     {
         health += damage;
         hpSlider.value = health;
-        if(health >= 60)
+        if(health >= 100)
         {
             manager.WinGame();
         }

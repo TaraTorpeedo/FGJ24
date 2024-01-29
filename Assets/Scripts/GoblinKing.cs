@@ -1,61 +1,47 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class GoblinKing : MonoBehaviour
 {
-
-    public int health = 0;
-    public Slider hpSlider;
-
-    public NavMeshAgent agent;
-    public Transform Player;
-    public string[] Jokes;
-    public string[] JokesSecondPart;
-
-    public AudioSource source;
-    public AudioClip[] JokeClips;
-    public AudioClip[] JokeSecondPartClips;
-
-    public AudioClip[] LaughClips;
-    public AudioClip[] YellClips;
+    [SerializeField] private int health = 0;
+    [SerializeField] private Slider hpSlider;
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private Transform Player;
+    [SerializeField] private string[] Jokes;
+    [SerializeField] private string[] JokesSecondPart;
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip[] JokeClips;
+    [SerializeField] private AudioClip[] JokeSecondPartClips;
+    [SerializeField] private AudioClip[] LaughClips;
+    [SerializeField] private AudioClip[] YellClips;
     [SerializeField] private AudioDetection audioDetector;
     [SerializeField] private float loudnessSensibility = 100;
     [SerializeField] private float threshold = 0.1f;
-    bool isYelling;
-    bool ableToYell;
+    [SerializeField] private InfoSettings settings;
+    [SerializeField] private GameManager manager;
+    [SerializeField] private LayerMask WhatIsPlayer;
+    [SerializeField] private Vector3 walkPoint;
+    [SerializeField] private Transform[] walkPoints;
+    [SerializeField] private float timeBetweenJokes, timeBetweenSecondPart;
+    [SerializeField] private float sightRange, attackRange;
+    [SerializeField] private bool playerInSightRange, playerInAttackRange;
+    [SerializeField] private int JokeLengthDivider;
+    [SerializeField] private TextMeshProUGUI JokeText;
+    [SerializeField] private Animator animator;
 
-    public LayerMask WhatIsPlayer;
-
+    private bool isYelling;
+    private bool ableToYell;
+    private bool canAttack = true;
     private LayerMask WhatIsGround = 3;
+    private int jokeBefore = 0;
+    private bool alreadyJoked;
+    private bool walkPointSet;
 
-    //Patrolling
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public Transform[] walkPoints;
 
-    //Joking
-    public float timeBetweenJokes, timeBetweenSecondPart;
-    bool alreadyJoked;
-
-    //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
-
-    public int JokeLengthDivider;
-
-    public TextMeshProUGUI JokeText;
-
-    int jokeBefore = 0;
-
-    bool canAttack = true;
-
-    public Animator animator;
-
-    void MicCatch()
+    private void MicCatch()
     {
         float loudness = audioDetector.GetLoudnessFromMicrophone() * loudnessSensibility;
 
@@ -72,8 +58,7 @@ public class GoblinKing : MonoBehaviour
         }
     }
 
-
-    private void Update()
+    protected void Update()
     {
         if(transform.hasChanged)
         {
@@ -84,7 +69,10 @@ public class GoblinKing : MonoBehaviour
             animator.SetBool("Walk", false);
         }
 
-        MicCatch();
+        if (settings.IsMicApproved())
+        {
+            MicCatch();
+        }
         float distance = Vector3.Distance(Player.transform.position, transform.position);
 
         if (!isYelling)
@@ -139,7 +127,7 @@ public class GoblinKing : MonoBehaviour
 
     }
 
-    void Joking()
+    private void Joking()
     {
         if (!alreadyJoked)
         {
@@ -169,7 +157,7 @@ public class GoblinKing : MonoBehaviour
         }
     }
 
-    void SearchWalkPoint()
+    private void SearchWalkPoint()
     {
         int randomPoint = Random.Range(0, walkPoints.Length);
 
@@ -196,7 +184,7 @@ public class GoblinKing : MonoBehaviour
         canAttack = true;
     }
 
-    IEnumerator TellJoke()
+    private IEnumerator TellJoke()
     {
         Debug.Log(isYelling);
         int rnd = Random.Range(0, Jokes.Length);
@@ -276,7 +264,7 @@ public class GoblinKing : MonoBehaviour
 
         ResetJoke();
     }
-    void ResetJoke()
+    private void ResetJoke()
     {
         alreadyJoked = false;
     }
@@ -311,9 +299,9 @@ public class GoblinKing : MonoBehaviour
     {
         health += damage;
         hpSlider.value = health;
-        if(health > 100)
+        if(health >= 60)
         {
-            GameManager.Instance.WinGame();
+            manager.WinGame();
         }
     }
 }

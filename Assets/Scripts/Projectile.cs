@@ -39,13 +39,12 @@ public class Projectile : MonoBehaviour
             if (!hasExploded)
             {
                 Explode();
+                if (collision.collider.gameObject.GetComponent<GoblinKing>())
+                {
+                    collision.collider.gameObject.GetComponent<GoblinKing>().TakeFood(20);
+                }
                 hasExploded = true;
             }
-        }
-
-        if (collision.collider.gameObject.GetComponent<GoblinKing>())
-        {
-            collision.collider.gameObject.GetComponent<GoblinKing>().TakeFood(10);
         }
     }
 }

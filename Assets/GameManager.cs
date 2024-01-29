@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -23,21 +24,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject GameUI;
 
-    // Start is called before the first frame update
-    public static GameManager Instance;
 
     void Start()
     {
-        if (Instance is null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         foreach (var goblin in goblins)
         {
             goblin.gameObject.SetActive(false);
@@ -50,6 +39,11 @@ public class GameManager : MonoBehaviour
 
         StartCanvas.SetActive(true);
         InputManager.Instance.SetCurscorVisible(true);
+
+   
+        startPlayableDirector.gameObject.SetActive(true);
+        deadPlayableDirector.gameObject.SetActive(false);
+        winPlayableDirector.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

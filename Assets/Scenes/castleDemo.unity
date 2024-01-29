@@ -12880,6 +12880,11 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1246354129388838584, guid: c8dd864c696fd4643ae3d7070ccf9c21,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00048828125
+      objectReference: {fileID: 0}
     - target: {fileID: 1498065479020193873, guid: c8dd864c696fd4643ae3d7070ccf9c21,
         type: 3}
       propertyPath: m_Pivot.x
@@ -13099,6 +13104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevelAgain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913069341946518965, guid: c8dd864c696fd4643ae3d7070ccf9c21,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 4957006531066019529, guid: c8dd864c696fd4643ae3d7070ccf9c21,
         type: 3}
@@ -41913,6 +41923,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2429911117809046705, guid: c8dd864c696fd4643ae3d7070ccf9c21,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00048828125
+      objectReference: {fileID: 0}
     - target: {fileID: 2469711061609113058, guid: c8dd864c696fd4643ae3d7070ccf9c21,
         type: 3}
       propertyPath: m_IsActive
@@ -41927,7 +41942,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "music & sound\nJaggedStone \nremaxim\nNanakisan\ncreativeheroes\nthanvannispen\nJohnsonBrandEditing\nRiku
-        Heino"
+        Heino\n\nanimations\nMixamo\nRiku Heino"
       objectReference: {fileID: 0}
     - target: {fileID: 3243383889846755891, guid: c8dd864c696fd4643ae3d7070ccf9c21,
         type: 3}
@@ -41983,6 +41998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -48.678802
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701165721471947201, guid: c8dd864c696fd4643ae3d7070ccf9c21,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 3734533186133328672, guid: c8dd864c696fd4643ae3d7070ccf9c21,
         type: 3}
@@ -42058,6 +42078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -34.603027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354357591798424461, guid: c8dd864c696fd4643ae3d7070ccf9c21,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 5366275225677773854, guid: c8dd864c696fd4643ae3d7070ccf9c21,
         type: 3}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public float health;
     public GameObject panel;
+    public GameManager manager;
 
     public void TakeDamage(float damageRate)
     {
@@ -14,10 +16,9 @@ public class PlayerHealth : MonoBehaviour
 
         health -= damageRate;
 
-        if(health == 0)
+        if (health == 0)
         {
-            GameManager.Instance.LoseGame();
+            manager.LoseGame();
         }
     }
-
 }

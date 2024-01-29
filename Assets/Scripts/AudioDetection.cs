@@ -1,20 +1,21 @@
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class AudioDetection : MonoBehaviour
 {
     [SerializeField] private int sampleWindow = 64;
-    private AudioClip microphoneClip;
     [SerializeField] TMP_Dropdown dropdown;
+    [SerializeField] InfoSettings settings;
 
+    private AudioClip microphoneClip;
     private int micValue = 0;
 
     public void Start()
     {
-        MicrophoneToAudioClip(micValue);
+        if (settings.IsMicApproved())
+        {
+            MicrophoneToAudioClip(micValue);
+        }
 
         dropdown.onValueChanged.AddListener(delegate
         {

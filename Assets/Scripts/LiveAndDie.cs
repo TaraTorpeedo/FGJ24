@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class LiveAndDie : MonoBehaviour
 {
+    [SerializeField] AudioSource audio;
 
     void Start()
     {
+        audio.Play();
         StartCoroutine(DieAndRespawn());
     }
 

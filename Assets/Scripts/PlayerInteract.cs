@@ -1,6 +1,3 @@
-using Cinemachine;
-using Unity.Mathematics;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
